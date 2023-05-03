@@ -1,0 +1,54 @@
+@import "../../../../sass/variables";
+@import "../../../../sass/animations";
+@import "../../../../sass//mixins";
+
+.nav-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 3;
+  background-color: rgba($color-white, 0.9);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: $light-shadow;
+  transition: all .5s;
+  cursor: pointer;
+  background-image: linear-gradient(120deg, transparent 50%, transparent 50%, $light-green 50%);
+  background-size: 220%;
+  &:hover {
+    background-position: 100%;
+    box-shadow: $default-shadow;
+  }
+  .hamburger-menu {
+    @include flexCenter;
+    width: 6rem;
+    height: 6rem;
+    hr {
+      width: 3rem;
+      margin-top: .3rem;
+      margin-bottom: .3rem;
+      background-color: #666;
+      border-color: #666;
+      height: 3px;
+      transition: 0.5s ease-in;
+    }
+  }
+}
+.default-line {
+  display:  inline-block;
+  transform: translateY(0) translateX(0) rotate(0);
+  opacity: 1;
+}
+.line1 {
+  display:  inline-block;
+  transform: translateY(.9rem) rotate(-45deg);
+}
+.line2 {
+  opacity: 0;
+}
+.line3 {
+  display:  inline-block;
+  transform:  translateY(-.9rem) rotate(45deg);
+}
+

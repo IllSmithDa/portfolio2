@@ -1,0 +1,124 @@
+
+@import "../variables";
+// link state is the initial state of the button and visited is after it has
+// been clicked on once
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    // by default links are inline, so use 'inline-block' for box model to work
+    display: inline-block;
+    border-radius: 18rem;
+    transition: all .2s;
+    position: relative;
+    font-size: $default-font-size;
+    font-weight: 600;
+    box-shadow: $light-shadow;
+    background-color: rgba(#FFF, 0.9);
+  }
+  &:hover {
+    transform: translateY(-3px);
+    // offset for shadow 
+    // x = 0; y = 10px; blur = 20px; shadow color = light black tone rgba values
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+      
+    }
+  }
+  
+  &:active {
+    transform: translateY(3px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  }
+  
+  &--white {
+    background-color: $fall-background;
+    color: #777;
+    &::after{
+      background-color: $fall-background;
+    }
+  }
+  // pseudo element
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+  &::after {
+    // always specify even if its just empty val
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+  &-text {
+    &:link,
+    &:visited {
+      color: $fall-orange;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $fall-orange;
+      padding: 3px 6px;
+      font-size: $default-font-size;
+      font-weight: 600;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $fall-orange 50%);
+      background-size: 220%;
+      transition: all .5s;
+      border-radius: 2px;
+    }
+    &:hover {
+      background-position: 100%;
+      box-shadow: $default-shadow;
+      color: $color-white;
+      border-bottom: 1px solid $color-white;
+      // background-color: #FFF;
+    }
+    &:active {
+      transform: translateY(3px);
+      box-shadow: $light-shadow;
+    }
+  }
+  &-black
+   {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+      padding: 3px 6px;
+      font-size: $default-font-size;
+      font-weight: 600;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $fall-orange 50%);
+      background-size: 240%;
+      transition: all .5s;
+      border-radius: 2px;
+      color: #666;
+    }
+    &:hover {
+      background-position: 100%;
+      border-bottom: 1px solid $fall-background;
+      color: $fall-background;
+      box-shadow: $default-shadow;
+    }
+    &:active {
+      transform: translateY(3px);
+      box-shadow: $light-shadow;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .btn {
+    &:link,
+    &:visited {
+      padding: 1rem 2rem;
+    }
+  }
+}

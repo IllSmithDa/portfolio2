@@ -1,0 +1,9 @@
+@import "../../../../sass/variables";
+.footer {
+  height: 10vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($fall-orange, 1), 
+    rgba($dark-green, 1));
+  clip-path: polygon(0 100%, 100% 0,100% 100%, 0 100%);
+}

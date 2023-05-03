@@ -1,0 +1,47 @@
+@import "../../../../sass/variables";
+@import "../../../../sass//mixins";
+@import "../../../../sass//animations";
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($fall-orange, 0.7), 
+    rgba($dark-green, 0.7)), 
+    url('../../../../assets/images/forest_bridge_com.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);  
+  @include flexCenter;
+  color: rgba(#FFF, 0.9);
+  min-height: 100vh;
+  h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    animation: moveInRight 1s ease-out .75s;
+    animation-fill-mode: backwards;
+    /*
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
+    &:hover {
+      transform: skewY(2deg) skewX(2deg);
+      text-shadow: $default-shadow
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    animation: moveInLeft 1s ease-out .75s;
+    animation-fill-mode: backwards;
+    &:hover {
+      transform: skewY(-2deg) skewX(-2deg);
+      text-shadow: $default-shadow
+    }
+  }
+  a {
+    animation: moveUp 1s ease-out .75s;
+    // set properties from initial moveUp as part of the initial css here
+    animation-fill-mode: backwards;
+    background-color: $fall-background;
+  }
+}

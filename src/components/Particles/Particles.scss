@@ -1,0 +1,66 @@
+@import "../../sass/variables";
+
+#particle-container {
+  z-index: -1;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 65vw;
+  margin-left:auto;
+  margin-right: auto;
+  img{
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+  }
+  @for $i from 1 through 20 {
+    img:nth-child(#{$i}) {
+      $time: 12 + random(24);
+      animation: particle-animation #{$time}s ease-in infinite;
+      overflow-x: hidden;
+      $delay: random(5);
+      animation-delay: -#{$delay}s;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  #particle-container {
+    max-width: 75vw;
+    img {
+      width: 3rem;
+      height: 2.5rem;
+    }
+  }
+  
+}
+
+
+@keyframes particle-animation {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  25% {
+    $xVal: random(2);
+    transform: translateY(25vh) translateX(#{$xVal}vw) rotate(120deg);
+  }
+  50% {
+    $xVal: random(4);
+    transform: translateY(50vh) translateX(#{$xVal}vw) rotate(360deg);
+  }
+  75% {
+    $xVal: random(6);
+    transform: translateY(75vh) translateX(#{$xVal}vw) rotate(540deg);
+  }
+  100%{
+    $xVal: random(8);
+    transform: translateY(80vh) translateX(#{$xVal}vw) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+}

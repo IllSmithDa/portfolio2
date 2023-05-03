@@ -1,0 +1,40 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    // adjust the permanent position temporarly by -10% in its x axis
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX('0')
+  }
+  100% {
+    transform: rotateX('45deg')
+  }
+}

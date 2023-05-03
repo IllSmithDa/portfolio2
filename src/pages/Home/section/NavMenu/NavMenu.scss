@@ -1,0 +1,136 @@
+@import "../../../../sass/variables";
+@import "../../../../sass//mixins";
+@import "../../../../sass/utility";
+@import "../../../../sass//animations";
+@import "../../../../sass/mixins";
+
+.nav-menu {
+  position: fixed;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($fall-orange, 1), 
+    rgba($dark-green, 1));
+  z-index: 2;
+  @include flexCenter;
+}
+
+.toggle-display-off {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  animation: hideWindow 0.5s ease-out;
+  top: 2rem;
+  right: 2rem;
+}
+.menu-init-state {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  top: 2rem;
+  right: 2rem;
+}
+.toggle-display-on {
+  width: 100vw;
+  height: 100vh;
+  animation: expandWindow 0.5s ease-in;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.menu-display-none {
+  display: none;
+  opacity: 0;
+}
+.menu-display-block {
+  @include flexCenter;
+  animation: holdAppear 1s;
+}
+
+#nav-button-group {
+  h1 {
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-size: 4rem;
+    color: $fall-background;
+    transition: .2s;
+    &:hover {
+      transform: skewY(2deg) skewX(2deg);
+      transition: .2s;
+    }
+  }
+  div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .btn-nav-link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        color: $fall-background;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $fall-background 50%);
+        background-size: 220%;
+        transition: all .5s;
+        text-transform: uppercase;
+      }
+      &:hover {
+        color: rgba(#777, 1);
+        background-position: 100%;
+        // background-color: #FFF;
+        transform: translateX(-3rem);
+      }
+    }
+  }
+}
+
+@keyframes holdAppear{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes expandWindow{
+  0% {
+    width: 6rem;
+    height: 6rem;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100rem;
+    height: 100rem;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+  }
+}
+@keyframes hideWindow{
+  0% {
+    width: 100rem;
+    height: 100rem;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    display: flex;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    display: flex;
+  }
+}

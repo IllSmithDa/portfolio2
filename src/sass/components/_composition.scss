@@ -1,0 +1,34 @@
+@import "../variables";
+
+.composition {
+  width: 10rem;
+  height: 5rem;
+  position: relative;
+  box-shadow: $light-shadow;
+  background-color: $color-white;
+  border-radius: 2px;
+  z-index: 5;
+  opacity: 0.9;
+  &__photo {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: auto;
+    border-radius: 2px;
+    z-index: 3;
+  }
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+  &:hover {
+    box-shadow: $default-shadow;
+    // zoom: 1.1;
+  }
+  &:active {
+    box-shadow: $default-shadow;
+    transform: translateY(2px);
+  }
+}

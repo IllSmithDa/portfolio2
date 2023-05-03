@@ -1,0 +1,64 @@
+@import "../../../../sass/variables";
+@import "../../../../sass/utility";
+@import "../../../../sass/mixins";
+
+.contact-container {
+  @include flexCenter;
+  min-height: 80vh;
+  width: 100%;
+  clip-path: polygon(0 0%, 100% 0,100% 100%, 0 100%);
+  p {
+    font-size: $default-font-size;
+  }
+  a {
+    font-size: $default-font-size;
+  }
+  .icons {
+    display: flex;
+    a, 
+    a:link,
+    a:visited {
+      width: 6rem;
+      height: 6rem;
+      box-shadow: $light-shadow;
+      background-color: $color-white;
+      border-radius: 2px;
+      opacity: 0.9;
+      @include flexCenter;
+      &:first-child {
+        margin-right: 1rem;
+      }
+      &:last-child {
+        margin-left: 1rem;
+      }
+      &:hover {
+        box-shadow: $default-shadow;
+      }
+      &:active {
+        box-shadow: $light-shadow;
+        transform: translateY(2px);
+      }
+      img {
+        width: 5rem;
+      }
+    }
+  }
+}
+.my-image {
+  margin: 2rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
