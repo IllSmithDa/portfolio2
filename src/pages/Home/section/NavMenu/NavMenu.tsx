@@ -38,16 +38,6 @@ export default function NavMenu() {
         >
           <a className="btn-nav-link" href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank">LinkedIn Profile &rarr;</a>
         </div>
-        <div
-          id="theologians-app"
-        >
-          <a className="btn-nav-link" href="https://www.theologianspen.com" target="_blank">Theologian's Pen &rarr;</a>
-        </div>
-        <div
-          id="kloak-app"
-        >
-          <a className="btn-nav-link" href="https://www.gokloak.com" target="_blank">Kloak &rarr;</a>
-        </div>
       </div>
     </section>
   )
