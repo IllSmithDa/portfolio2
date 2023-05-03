@@ -87,6 +87,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .project {
+    background-attachment: local;
+  }
+}
+
 @media (max-width: 800px) {
   .project{
     min-height: 250vh;
