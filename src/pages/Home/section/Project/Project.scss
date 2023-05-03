@@ -57,8 +57,8 @@
         a,
         a:visited,
         a:link {
-          float: left;
-          &:last-child { 
+          &:last-child {
+            float: left; 
             position: absolute;
             bottom: 5%;
             left: 5%;
@@ -71,6 +71,16 @@
     max-width:  100%;
     margin: 0;
     min-height: 200px;
+    box-shadow: $light-shadow;
+    &:hover {
+      box-shadow: $default-shadow;
+      transform: scale(1.05);
+      transition: .2s ease-in;
+    }
+    &:active {
+      transform: translateY(2px);
+      transition: .2s;
+    }
   }
 
 }

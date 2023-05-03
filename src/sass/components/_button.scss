@@ -36,10 +36,10 @@
   }
   
   &--white {
-    background-color: $fall-background;
+    background-color: $color-white;
     color: #777;
     &::after{
-      background-color: $fall-background;
+      background-color: $color-white;
     }
   }
   // pseudo element
