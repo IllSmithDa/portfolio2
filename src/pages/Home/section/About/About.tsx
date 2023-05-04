@@ -23,43 +23,43 @@ export default function About() {
           <h3 className="heading-tertiary u-margin-bottom-small">Front End</h3>
           <div className="grid">
               <a className="composition" href="https://react.dev/" target="_blank">
-                <img className="composition__photo composition__photo--p1" src={reactImg} />
+                <img className="composition__photo composition__photo--p1" src={reactImg} alt="react.js link" />
               </a>
               <a className="composition" href="https://redux-toolkit.js.org/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={reduxImg} />
+                <img className="composition__photo composition__photo--p3" src={reduxImg} alt="redux link" />
               </a>
               <a className="composition" href="https://www.cypress.io/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={cypressImg} />
+                <img className="composition__photo composition__photo--p3" src={cypressImg} alt="cypress link" />
               </a>
               <a className="composition" href="https://sass-lang.com/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={sassImg} />
+                <img className="composition__photo composition__photo--p3" src={sassImg} alt="sass link" />
               </a>
               <a className="composition" href="https://www.typescriptlang.org/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={typescriptImg} />
+                <img className="composition__photo composition__photo--p3" src={typescriptImg} alt="typescript link" />
               </a>
               <a className="composition" href="https://html.spec.whatwg.org/multipage/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={html5Img} />
+                <img className="composition__photo composition__photo--p3" src={html5Img} alt="html link" />
               </a>
               <a className="composition" href="https://www.css3.info/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={css3Img} />
+                <img className="composition__photo composition__photo--p3" src={css3Img} alt="css3 link" />
               </a>
               <a className="composition" href="https://www.apollographql.com/docs/react/" target="_blank">
-                <img className="composition__photo composition__photo--p3" src={apolloImg} />
+                <img className="composition__photo composition__photo--p3" src={apolloImg} alt="apollo link"/>
               </a>
           </div>
           <h3 className="heading-tertiary u-margin-bottom-small u-margin-top-medium">Back End</h3>
           <div className="grid">
               <a className="composition" href="https://nodejs.org/en" target="_bank">
-                <img className="composition__photo composition__photo--p2" src={nodeImg} />
+                <img className="composition__photo composition__photo--p2" src={nodeImg} alt="node.js link"/>
               </a>
               <a className="composition" href="https://www.mongodb.com/" target="_blank">
-                <img className="composition__photo composition__photo--p2" src={mongoImg} />
+                <img className="composition__photo composition__photo--p2" src={mongoImg} alt="mongodb link"/>
               </a>
               <a className="composition" href="https://expressjs.com/" target="_blank">
-                <img className="composition__photo composition__photo--p2" src={expressImg} />
+                <img className="composition__photo composition__photo--p2" src={expressImg} alt="express.js link"/>
               </a>
               <a className="composition" href="https://www.mysql.com/" target="_blank">
-                <img className="composition__photo composition__photo--p2" src={sqlImage} />
+                <img className="composition__photo composition__photo--p2" src={sqlImage} alt="my sql link"/>
               </a>
           </div>
         </div>
