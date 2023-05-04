@@ -24,7 +24,7 @@
       text-transform: uppercase;
       transition: 1s ease-in;
       font-size: 3rem;
-      color: rgba($color-white, 0.8);
+      color: $color-white;
       display: inline-block;
       &:hover {
         transform: skewY(2deg) skewX(2deg);
