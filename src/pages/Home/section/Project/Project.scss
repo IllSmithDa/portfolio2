@@ -16,53 +16,50 @@
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   @include flexCenter;
   transition: 1s ease-in;
-  .main-content {
-    text-align: center;
-    width: 90%;
-    h1 {
-      text-transform: uppercase;
-      transition: 1s ease-in;
-      font-size: 3rem;
-      color: $color-white;
-      display: inline-block;
-      &:hover {
-        transform: skewY(2deg) skewX(2deg);
-        transition: .2s;
-      }
-      /*
-      animation-iteration-count: 3;
-      animation-delay: 3s;
-      */
+  h1 {
+    text-transform: uppercase;
+    transition: 1s ease-in;
+    font-size: 3rem;
+    color: $color-white;
+    display: inline-block;
+    &:hover {
+      transform: skewY(2deg) skewX(2deg);
+      transition: .2s;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 4rem;
-      &--card {
-        background-color: rgba($color-white, 0.8);
-        box-shadow: $default-shadow;
-        color: #666;
-        padding: 2rem;
-        position: relative;
-        border-radius: 2px;
-        h3 {
-          font-size: $large-font-size;
-          text-align: left;
-        }
-        p {
-          font-size: $default-font-size;
-          font-weight: 600;
-          text-align: left;
-        }
-        a,
-        a:visited,
-        a:link {
-          &:last-child {
+    /*
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
+  }
+  &-display {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    &-card {
+      background-color: rgba($color-white, 0.8);
+      box-shadow: $default-shadow;
+      color: #666;
+      padding: 2rem;
+      position: relative;
+      border-radius: 2px;
+      h3 {
+        font-size: $large-font-size;
+        text-align: left;
+      }
+      p {
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-align: left;
+      }
+      a,
+      a:visited,
+      a:link {
+        &:last-child {
             float: left; 
             position: absolute;
             bottom: 5%;
             left: 5%;
-          }
         }
       }
     }
@@ -87,33 +84,30 @@
 
 @media (max-width: 1600px) {
   .project {
-    .main-content {
-      width: auto;
-      .projects {
-        display: flex;
-        justify-content: start;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 1rem;
-        width: 90vw;
-        gap: 3rem;
-        &::-webkit-scrollbar {
-          width: 10px;
-          height: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-          background: $fall-green;
-          border-radius: 10px;
-        }
-        &::-webkit-scrollbar-track {
-          background: transparent;
-        }
+    &-display {
+      display: flex;
+      justify-content: start;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 1rem;
+      width: 90vw;
+      gap: 3rem;
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
       }
-      .image-item {
-        max-width: 400px;
+      &::-webkit-scrollbar-thumb {
+        background: $fall-green;
+        border-radius: 10px;
       }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    }
+    .image-item {
+      max-width: 400px;
     }
   }
   
@@ -129,7 +123,7 @@
     .main-content {
       .projects {
         gap: 2rem;
-        &--card {
+        &-card {
           padding: 1rem;
           &:not(:last-child) {
             margin-right: 1rem;
@@ -147,7 +141,7 @@
   .project{ 
     .main-content {
       .projects {
-        &--card {
+        &-card {
           &:not(:last-child) {
             margin-right: 0.5rem;
           }
