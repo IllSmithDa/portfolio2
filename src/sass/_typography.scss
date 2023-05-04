@@ -34,3 +34,8 @@
     margin-bottom: 3rem;
   }
 }
+@media (max-width: 300px) {
+  .paragraph {
+    font-size: $default-font-size;
+  }
+}
