@@ -31,12 +31,12 @@ export default function NavMenu() {
         <div
           id="github-profile"
         >
-          <a className="btn-nav-link" href="https://github.com/IllSmithDa" target="_blank">Github Profile &rarr;</a>
+          <a className="btn-nav-link" href="https://github.com/IllSmithDa" target="_blank"  rel="noopener noreferrer" >Github Profile &rarr;</a>
         </div>
         <div
           id="linkedin-profile"
         >
-          <a className="btn-nav-link" href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank">LinkedIn Profile &rarr;</a>
+          <a className="btn-nav-link" href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank"  rel="noopener noreferrer">LinkedIn Profile &rarr;</a>
         </div>
       </div>
     </section>
