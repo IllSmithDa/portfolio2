@@ -28,14 +28,10 @@ export default function NavMenu() {
         <div onClick={() => { dispatch(toggleMenuState()); }}>
           <a className="btn-nav-link" href="#contact">Contact Info &rarr;</a>
         </div>
-        <div
-          id="github-profile"
-        >
+        <div>
           <a className="btn-nav-link" href="https://github.com/IllSmithDa" target="_blank"  rel="noopener noreferrer" >Github Profile &rarr;</a>
         </div>
-        <div
-          id="linkedin-profile"
-        >
+        <div>
           <a className="btn-nav-link" href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank"  rel="noopener noreferrer">LinkedIn Profile &rarr;</a>
         </div>
       </div>
