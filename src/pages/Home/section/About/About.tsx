@@ -15,7 +15,7 @@ import "./About.scss";
 export default function About() {
   return (
     <section className="about-container" id="tech-stack">
-      <h2 className="heading-secondary u-center-text u-margin-bottom-big right-on-scroll">
+      <h2 className="heading-secondary u-center-text u-margin-bottom-medium right-on-scroll">
         Tech Stack:
       </h2>
       <div className="row left-on-scroll">
