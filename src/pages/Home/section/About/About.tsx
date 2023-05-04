@@ -65,8 +65,10 @@ export default function About() {
         </div>
         <div className="col-1-of-2">
           <p className="paragraph">
-            Building a website is no easy task. This is why I spent years honing my craft 
-            to learn the MERN stack and build applications that are responsive and easy to use. 
+            Building a website is not an easy task. This is why I spent years honing my craft 
+            to learn the MERN stack as well as testing frameworks like Cypress to 
+            build web applications that are responsive and easy to use. See 
+            some of my projects and demos below.
           </p>
           <a href="#projects" className="btn-text">My Projects &rarr;</a>
         </div>
