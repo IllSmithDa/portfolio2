@@ -56,7 +56,7 @@ export default function Project() {
         <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
          <img src={project.imageSrc} alt="project-src" className="image-item"/>
         </a>
-        <p className="u-margin-bottom-medium">{project.projectDesc}</p>
+        <p className="u-margin-bottom-large">{project.projectDesc}</p>
         <a className="btn-black" href={project.projectLink} target="_blank" rel="noopener noreferrer">
           Link &rarr;
         </a>
@@ -67,7 +67,7 @@ export default function Project() {
   return (
     <section className="project" id="projects">
       <div className="main-content">
-        <h1 className="u-margin-bottom-medium right-on-scroll">My Projects and Demos</h1>
+        <h1 className="u-margin-bottom-large right-on-scroll">My Projects and Demos</h1>
         <div className="projects left-on-scroll">
           {listProjects}
         </div>
