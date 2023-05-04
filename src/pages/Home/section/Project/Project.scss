@@ -47,11 +47,12 @@
         position: relative;
         border-radius: 2px;
         h3 {
-          font-size: 2rem;
+          font-size: $large-font-size;
           text-align: left;
         }
         p {
           font-size: $default-font-size;
+          font-weight: 600;
           text-align: left;
         }
         a,

@@ -8,10 +8,8 @@
   width: 100%;
   clip-path: polygon(0 0%, 100% 0,100% 100%, 0 100%);
   p {
-    font-size: $default-font-size;
-  }
-  a {
-    font-size: $default-font-size;
+    font-size: $medium-font-size;
+    font-weight: 500;
   }
   .icons {
     display: flex;

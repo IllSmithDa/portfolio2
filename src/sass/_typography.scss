@@ -22,13 +22,14 @@
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
+  font-size: $large-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: $medium-font-size;
+  font-weight: 600;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
