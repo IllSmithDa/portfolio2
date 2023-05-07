@@ -1,7 +1,6 @@
 @import "../../sass/variables";
 
 #particle-container {
-  z-index: -1;
   height: 0;
   display: flex;
   justify-content: space-between;
@@ -21,6 +20,7 @@
       overflow-x: hidden;
       $delay: random(5);
       animation-delay: -#{$delay}s;
+      z-index: 1;
     }
   }
 }
@@ -46,19 +46,23 @@
   }
   25% {
     $xVal: random(2);
-    transform: translateY(25vh) translateX(#{$xVal}vw) rotate(120deg);
+    $rotateVal: random(120);
+    transform: translateY(25vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
   }
   50% {
     $xVal: random(4);
-    transform: translateY(50vh) translateX(#{$xVal}vw) rotate(360deg);
+    $rotateVal: random(360);
+    transform: translateY(50vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
   }
   75% {
     $xVal: random(6);
-    transform: translateY(75vh) translateX(#{$xVal}vw) rotate(540deg);
+    $rotateVal: random(540);
+    transform: translateY(75vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
   }
   100%{
     $xVal: random(8);
-    transform: translateY(80vh) translateX(#{$xVal}vw) rotate(720deg);
+    $rotateVal: random(720);
+    transform: translateY(80vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
     opacity: 0;
     border-radius: 50%;
   }
