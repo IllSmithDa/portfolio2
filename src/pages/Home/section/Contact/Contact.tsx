@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import myPicture from '../../../../assets/images/SamK.png'
+import myPicture from '../../../../assets/images/profile_pic.jpg'
 import githubImg from '../../../../assets/images/github.png'
 import linkedinImg from '../../../../assets/images/linkedin.png'
 export default function Contact() {
