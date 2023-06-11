@@ -3,6 +3,7 @@ import theologianspenImg from '../../../../assets/images/theologianspen.png';
 import kloakImg from '../../../../assets/images/gokloak.png';
 import fireStormImg from '../../../../assets/images/firestorm.png';
 import ironCodeImg from '../../../../assets/images/ironcodeman.png';
+import snowflakeImg from '../../../../assets/images/snowflake.png';
 import "./Project.scss";
 
 
@@ -29,15 +30,6 @@ export default function Project() {
       id: useId(),
     },
     {
-      projectName: 'Infinite Firestorm',
-      projectDesc: 'Firestorm is a database for video games and includes many generations of both consoles and pc titles.',
-      projectLink:'https://firestorm.surge.sh',
-      shortLink: 'Firestorm.com',
-      projectTech: 'React.js, TypeScript, Styled-Components, JavaScript, HTML, CSS, Node.js, MongoDB', 
-      imageSrc: fireStormImg,
-      id: useId(),
-    },
-    {
       projectName:'Ironcodeman',
       projectDesc:`Ironcodeman is a simple to use application which lists commands from various different frameworks including
       Git, Heroku and Django.`,
@@ -45,6 +37,15 @@ export default function Project() {
       shortLink: 'ironcodeman.com',
       projectTech:'Javascript, Es6, React',
       imageSrc:ironCodeImg,
+      id: useId(),
+    },
+    {
+      projectName: 'Snowflake',
+      projectDesc: 'A simple mock shopping app that is used to demonstrate front end and UI development skills using React, Sass and TypeScript',
+      projectLink:'https://https://64853dd6ad38cc4cb31d3bce--mellifluous-paprenjak-ad1422.netlify.app/',
+      shortLink: '64853dd6ad38cc4cb31d3bce--mellifluous-paprenjak-ad1422.netlify.app/',
+      projectTech: 'React.js, TypeScript, Sass, JavaScript, HTML, CSS ', 
+      imageSrc: snowflakeImg,
       id: useId(),
     },
   ];
