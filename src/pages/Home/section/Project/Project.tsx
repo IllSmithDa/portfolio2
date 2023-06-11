@@ -1,7 +1,6 @@
 import { useId } from "react";
 import theologianspenImg from '../../../../assets/images/theologianspen.png';
 import kloakImg from '../../../../assets/images/gokloak.png';
-import fireStormImg from '../../../../assets/images/firestorm.png';
 import ironCodeImg from '../../../../assets/images/ironcodeman.png';
 import snowflakeImg from '../../../../assets/images/snowflake.png';
 import "./Project.scss";
