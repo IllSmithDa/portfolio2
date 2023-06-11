@@ -41,7 +41,7 @@ export default function Project() {
     {
       projectName: 'Snowflake',
       projectDesc: 'A simple mock shopping app that is used to demonstrate front end and UI development skills using React, Sass and TypeScript',
-      projectLink:'https://https://64853dd6ad38cc4cb31d3bce--mellifluous-paprenjak-ad1422.netlify.app/',
+      projectLink:'https://64853dd6ad38cc4cb31d3bce--mellifluous-paprenjak-ad1422.netlify.app/',
       shortLink: '64853dd6ad38cc4cb31d3bce--mellifluous-paprenjak-ad1422.netlify.app/',
       projectTech: 'React.js, TypeScript, Sass, JavaScript, HTML, CSS ', 
       imageSrc: snowflakeImg,
