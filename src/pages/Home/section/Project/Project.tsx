@@ -12,9 +12,9 @@ export default function Project() {
     {
       projectName: 'Theologian\'s Pen',
       projectDesc:'Enjoy the richest theological writings of church history made easily accessible and readable.',
-      projectLink:'https://www.theologianspen.com',
+      projectLink:'https://www.theologianspen.com/test',
       shortLink: theologianspenImg,
-      projectTech:'React.js Node.js MongoDB, Express.js',
+      projectTech:'React.js Node.js MongoDB, Express.js, TypeScript, Sass',
       imageSrc: theologianspenImg,
       id: useId(),
     },
