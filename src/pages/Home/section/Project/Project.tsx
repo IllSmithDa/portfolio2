@@ -3,6 +3,7 @@ import theologianspenImg from '../../../../assets/images/theologianspen.png';
 import kloakImg from '../../../../assets/images/gokloak.png';
 import ironCodeImg from '../../../../assets/images/ironcodeman.png';
 import snowflakeImg from '../../../../assets/images/snowflake.png';
+import ghostedOnImg from '../../../../assets/images/ghostedon.png';
 import "./Project.scss";
 
 
@@ -26,6 +27,15 @@ export default function Project() {
       shortLink: 'gokloak.com',
       projectTech:'React.js Node.js MongoDB, Express.js',
       imageSrc: kloakImg,
+      id: useId(),
+    },
+    { 
+      projectName: 'GhostedOn',
+      projectDesc:`GhostedOn is a social media application for anyone who wishes to share their work related stories. This web application is built solely by me from the ground up using the PERN stack. `,
+      projectLink:'https://www.ghostedon.com/',
+      shortLink: 'ghostedon.com',
+      projectTech:'Javascript, Es6, React, Next.js, Postgresql, Node.js, Express.js',
+      imageSrc:ghostedOnImg,
       id: useId(),
     },
     {

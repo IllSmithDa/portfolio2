@@ -34,7 +34,7 @@
   &-display {
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 4rem;
     &-card {
       background-color: rgba($color-white, 0.8);
@@ -48,7 +48,7 @@
         text-align: left;
       }
       p {
-        font-size: $default-font-size;
+        font-size: $small-font-size;
         font-weight: 600;
         text-align: left;
       }
@@ -82,7 +82,7 @@
 
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .project {
     &-display {
       display: flex;
