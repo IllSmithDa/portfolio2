@@ -61,13 +61,15 @@ export default function NavButton() {
 
   return (
     <section className="nav-container"
+      tabIndex={0}
+      aria-label='navigation button'
       onClick={() => { dispatch(toggleMenuState()); }}
     >
-      <div id="hamburger-menu" className="hamburger-menu">
+      <section id="hamburger-menu" className="hamburger-menu">
         <hr id="line1" className="default-line" />
         <hr id="line2" className="default-line" />
         <hr id="line3" className="default-line" />
-      </div>
+      </section>
     </section>
   )
 }
