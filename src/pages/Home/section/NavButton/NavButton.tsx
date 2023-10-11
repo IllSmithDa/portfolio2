@@ -59,11 +59,18 @@ export default function NavButton() {
   }, [initState, menuState])
 
 
+  // https://stackoverflow.com/questions/905222/prevent-form-submission-on-enter-key-press
+  // https://stackoverflow.com/questions/13637223/how-do-you-make-a-div-tabbable
   return (
     <section className="nav-container"
       tabIndex={0}
       aria-label='navigation button'
       onClick={() => { dispatch(toggleMenuState()); }}
+      onKeyDown={(keyEvent) => {
+        if (keyEvent.key === 'Enter') {
+          dispatch(toggleMenuState());
+        }
+      }}
     >
       <section id="hamburger-menu" className="hamburger-menu">
         <hr id="line1" className="default-line" />

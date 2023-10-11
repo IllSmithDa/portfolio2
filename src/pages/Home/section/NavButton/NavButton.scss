@@ -16,9 +16,11 @@
   cursor: pointer;
   background-image: linear-gradient(120deg, transparent 50%, transparent 50%, $light-green 50%);
   background-size: 220%;
-  &:hover {
+  &:hover,
+  &:active {
     background-position: 100%;
     box-shadow: $default-shadow;
+    outline: 2px solid #000;
   }
   .hamburger-menu {
     @include flexCenter;
