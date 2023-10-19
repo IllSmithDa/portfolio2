@@ -4,6 +4,7 @@ import kloakImg from '../../../../assets/images/gokloak.png';
 import ironCodeImg from '../../../../assets/images/ironcodeman.png';
 import snowflakeImg from '../../../../assets/images/snowflake.png';
 import ghostedOnImg from '../../../../assets/images/ghostedon.png';
+import forestMain from '../../../../assets/images/forest_main_com.webp'
 import "./Project.scss";
 
 
@@ -76,10 +77,16 @@ export default function Project() {
 
   return (
     <section className="project" id="projects">
+      <img
+        className='bg-img'
+        src={forestMain}
+        loading='lazy'
+      />
       <h1 className="u-margin-bottom-large right-on-scroll">My Projects and Demos</h1>
       <div className="project-display left-on-scroll">
         {listProjects}
       </div>
+      <div className='bg-gradient'></div>
     </section>
   );
 }

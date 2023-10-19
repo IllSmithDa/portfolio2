@@ -1,15 +1,11 @@
 @import "../../../../sass/variables";
 @import "../../../../sass/utility";
 @import "../../../../sass/mixins";
+@import "../../../../sass//components/composition";
 
 .project {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
-    to bottom right , 
-    rgba($fall-orange, 0.7), 
-    rgba($dark-green, 0.7)), 
-    url('../../../../assets/images/forest_main_com.jpg');
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -18,6 +14,7 @@
   transition: 1s ease-in;
   h1 {
     text-transform: uppercase;
+    z-index: 3;
     transition: 1s ease-in;
     font-size: 3rem;
     color: $color-white;
@@ -36,6 +33,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 4rem;
+    z-index: 3;
     &-card {
       background-color: rgba($color-white, 0.8);
       box-shadow: $default-shadow;
@@ -43,14 +41,17 @@
       padding: 2rem;
       position: relative;
       border-radius: 2px;
+      z-index: 3;
       h3 {
         font-size: $large-font-size;
         text-align: left;
+        z-index: 3;
       }
       p {
         font-size: $small-font-size;
         font-weight: 600;
         text-align: left;
+        z-index: 3;
       }
       a,
       a:visited,
