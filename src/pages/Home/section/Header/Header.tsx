@@ -1,11 +1,14 @@
 import "./Header.scss";
+import headerImgUrl from '../../../../assets/images/forest_bridge_com.webp'
+
+//https://imagekit.io/blog/lazy-loading-images-complete-guide/
 export default function Header() {
   return (
     <header className="header">
       {
       <img
         className='bg-img'
-        src={('/src/assets/images/forest_bridge_com.webp')}
+        src={headerImgUrl}
         loading='lazy'
       />
   }
