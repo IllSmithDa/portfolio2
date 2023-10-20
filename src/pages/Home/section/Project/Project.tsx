@@ -77,11 +77,14 @@ export default function Project() {
 
   return (
     <section className="project" id="projects">
+      {/*
       <img
         className='bg-img'
         src={forestMain}
         loading='lazy'
       />
+
+      */}
       <h1 className="u-margin-bottom-large right-on-scroll">My Projects and Demos</h1>
       <div className="project-display left-on-scroll">
           {listProjects}
@@ -95,7 +98,7 @@ export default function Project() {
         <button className="arrow-btn">&#11166;</button>
       </section>
       */}
-      <div className='bg-gradient'></div>
+      {/*<div className='bg-gradient'></div> */}
     </section>
   );
 }
