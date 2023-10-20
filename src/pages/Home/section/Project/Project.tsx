@@ -4,7 +4,7 @@ import kloakImg from '../../../../assets/images/gokloak.png';
 import ironCodeImg from '../../../../assets/images/ironcodeman.png';
 import snowflakeImg from '../../../../assets/images/snowflake.png';
 import ghostedOnImg from '../../../../assets/images/ghostedon.png';
-import forestMain from '../../../../assets/images/forest_main_com.webp'
+// import forestMain from '../../../../assets/images/forest_main_com.webp'
 import "./Project.scss";
 
 
