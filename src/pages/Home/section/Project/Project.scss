@@ -82,8 +82,43 @@
   }
 
 }
-
+.arrow-container {
+  @include flexRow;
+  width: 100%;
+  gap: 0;
+}
+.arrow-btn-cont {
+  display: none;
+  cursor: pointer;
+  width: max-content;
+  padding:0;
+  &:hover,
+  &:active {
+    background-color: rgba(155, 255, 155, 0.1);
+    button {
+      border: 1px solid rgba(155, 255, 155, 0.3);
+      background-color: rgba(155, 255, 155, 0.3);
+    }
+  }
+}
+.arrow-btn {
+  cursor: pointer;
+  font-size: 28px;
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: none;
+}
 @media (max-width: 1700px) {
+  .arrow-btn-cont {
+    display: flex;
+    @include flexCenter;
+    padding: 1rem;
+  }
   .project {
     &-display {
       display: flex;
@@ -93,7 +128,7 @@
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
       padding-bottom: 1rem;
-      width: 90vw;
+      width: 2250px;
       gap: 0;
       &-card {
         &:not(:last-child) {
@@ -126,9 +161,15 @@
 }
 @media(max-width: 800px) {
   .project {
+    &-display {
+      width: 90%;
+    }
     .image-item {
       width: 250px;
     }
+  }
+  .arrow-btn-cont {
+    display: none;
   }
 } 
 
