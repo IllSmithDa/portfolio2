@@ -103,6 +103,7 @@
       background-color: rgba(155, 255, 155, 0.3);
     }
   }
+  z-index: 3;
 }
 .arrow-btn {
   cursor: pointer;
@@ -118,7 +119,6 @@
 }
 @media (max-width: 1700px) {
   .arrow-btn-cont {
-    display: flex;
     @include flexCenter;
     padding: 1rem;
   }
