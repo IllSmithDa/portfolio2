@@ -20,7 +20,8 @@
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);  
   @include flexCenter;
   color: $color-white;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 800px;
   width: 100%;
 
   h1 {

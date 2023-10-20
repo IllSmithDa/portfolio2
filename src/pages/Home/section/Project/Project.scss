@@ -4,11 +4,9 @@
 @import "../../../../sass//components/composition";
 
 .project {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 800px;
   width: 100%;
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   @include flexCenter;
   transition: 1s ease-in;
@@ -122,6 +120,10 @@
 @media (max-width: 1023px) {
   .project {
     background-attachment: local;
+    position: static;
+    img {
+      position: static;
+    }
   }
 }
 @media(max-width: 800px) {
@@ -148,4 +150,8 @@
       width: 235px;
     }
   }
+}
+
+.arrow-container {
+
 }

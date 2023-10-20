@@ -83,9 +83,13 @@ export default function Project() {
         loading='lazy'
       />
       <h1 className="u-margin-bottom-large right-on-scroll">My Projects and Demos</h1>
-      <div className="project-display left-on-scroll">
-        {listProjects}
-      </div>
+      <section className='arrow-container'>
+        <button className="arrow-btn">&#11164;</button>
+        <div className="project-display left-on-scroll">
+          {listProjects}
+        </div>
+        <button className="arrow-btn">&#11166;</button>
+      </section>
       <div className='bg-gradient'></div>
     </section>
   );
