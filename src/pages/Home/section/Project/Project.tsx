@@ -6,6 +6,7 @@ import snowflakeImg from '../../../../assets/images/snowflake.png';
 import ghostedOnImg from '../../../../assets/images/ghostedon.png';
 import forestMain from '../../../../assets/images/forest_main_com.webp'
 import "./Project.scss";
+import Particles from "../../../../components/Particles/Particles";
 
 
 export default function Project() {
@@ -83,6 +84,7 @@ export default function Project() {
   }
   return (
     <section className="project" id="projects">
+      <Particles />
       {
       <img
         className='bg-img'
@@ -98,7 +100,7 @@ export default function Project() {
           {listProjects}
         </div>
       */}
-    
+
       <section className='arrow-container'>
         <div className='arrow-btn-cont' onClick={() => scrollDiv(-420) }> 
           <button className="arrow-btn" onClick={() => scrollDiv(-420) }>

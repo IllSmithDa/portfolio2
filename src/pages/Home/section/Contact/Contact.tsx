@@ -2,9 +2,11 @@ import "./Contact.scss";
 import myPicture from '../../../../assets/images/profile_pic.jpg'
 import githubImg from '../../../../assets/images/github.png'
 import linkedinImg from '../../../../assets/images/linkedin.png'
+import Particles from "../../../../components/Particles/Particles";
 export default function Contact() {
   return (
     <section className="contact-container" id="contact">
+      <Particles />
       <img className="my-image right-on-scroll" alt='profile' src={myPicture} />
       <h1 className="heading-secondary u-center-text u-margin-bottom-small right-on-scroll">Contact</h1>
       <p className="u-margin-bottom-small left-on-scroll"><b>Best way to Contact: </b>Email or Phone</p>

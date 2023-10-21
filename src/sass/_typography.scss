@@ -28,8 +28,10 @@
 }
 
 .paragraph {
+  position: relative;
   font-size: $medium-font-size;
   font-weight: 600;
+  z-index: 3;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }

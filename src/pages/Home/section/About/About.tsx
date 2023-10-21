@@ -11,10 +11,12 @@ import sqlImage from '../../../../assets/images/SQL.png';
 import typescriptImg from '../../../../assets/images/typescript.png';
 import apolloImg from "../../../../assets/images/apollo.png";
 import "./About.scss";
+import Particles from "../../../../components/Particles/Particles";
 
 export default function About() {
   return (
     <section className="about-container" id="tech-stack">
+      <Particles />
       <h2 className="heading-secondary u-center-text right-on-scroll">
         Tech Stack:
       </h2>

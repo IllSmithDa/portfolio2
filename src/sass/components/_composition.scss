@@ -34,7 +34,7 @@
 }
 
 .bg-img {
-  z-index: -1;
+  z-index: -2;
   position: fixed;
   object-fit: cover;
   height: 100%;
@@ -42,21 +42,21 @@
   left: 0;
   top: 0;
 }
-
+/*
 @media (max-width: 1023px) {
   .bg-img {
-    // position:absolute;
-    // height: auto;
+    position:absolute;
+    height: auto;
   }
 }
-
+*/
 .bg-gradient {
   background-image: linear-gradient(
     to right bottom,
     rgba($fall-orange, 0.7), 
     rgba($dark-green, 0.7));
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);  
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   height: 100vh;
   min-height: 800px;

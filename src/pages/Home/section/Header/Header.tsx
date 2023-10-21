@@ -1,10 +1,12 @@
 import "./Header.scss";
 import headerImgUrl from '../../../../assets/images/forest_bridge_com.webp'
+import Particles from "../../../../components/Particles/Particles";
 
 //https://imagekit.io/blog/lazy-loading-images-complete-guide/
 export default function Header() {
   return (
     <header className="header">
+    <Particles />  
       {
       <img
         className='bg-img'

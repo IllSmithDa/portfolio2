@@ -7,8 +7,6 @@ import NavMenu from './section/NavMenu/NavMenu';
 import Footer from './section/Footer/Footer';
 import { useEffect } from 'react';
 import Header from './section/Header/Header';
-import Particles from '../../components/Particles/Particles';
-
 function isElementInViewport(el: Element) {
   const rect = el.getBoundingClientRect();
   return (
@@ -25,20 +23,6 @@ function isElementInViewport(el: Element) {
 
 export default function Home() {
 
-  /*
-  const leftObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      entry.target.classList.toggle("left-visible");
-      entry.target.classList.toggle("not-visible");
-    });
-  });
-  const rightObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      entry.target.classList.toggle("left-visible");
-      entry.target.classList.toggle("not-visible");
-    });
-  });
-  */
   useEffect(() => {
     document.addEventListener('scroll', () => {
       const elementsLeft = document.querySelectorAll('.left-on-scroll');
@@ -68,14 +52,11 @@ export default function Home() {
     <div className="app-container">
       <NavButton />
       <NavMenu />
-      <Particles />
       <div className='extra-header' />
       <Header />
-      <Particles />
       <main>
         <About />
         <Project />
-        <Particles />
         <Contact />
         <Footer />
       </main>

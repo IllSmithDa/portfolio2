@@ -1,26 +1,26 @@
 @import "../../sass/variables";
 
 #particle-container {
-  height: 0;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  max-width: 65vw;
+  height: 75vh;
+  position: absolute;
+  width: 100%;
   margin-left:auto;
   margin-right: auto;
+  overflow: hidden;
   img{
     background-color: transparent;
     width: 4rem;
     height: 4rem;
+    position: relative;
+    z-index: 1;
   }
-  @for $i from 1 through 20 {
+  @for $i from 1 through 18 {
     img:nth-child(#{$i}) {
       $time: 12 + random(24);
       animation: particle-animation #{$time}s ease-in infinite;
       overflow-x: hidden;
       $delay: random(5);
       animation-delay: -#{$delay}s;
-      z-index: 1;
     }
   }
 }
@@ -45,24 +45,25 @@
     border-radius: 0;
   }
   25% {
-    $xVal: random(2);
+    $xVal: random(20);
     $rotateVal: random(120);
     transform: translateY(25vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
   }
   50% {
-    $xVal: random(4);
+    $xVal: random(40);
     $rotateVal: random(360);
-    transform: translateY(50vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(50vh) translateX(#{$xVal + 10}vw) rotate(#{$rotateVal}deg);
   }
   75% {
-    $xVal: random(6);
+    $xVal: random(60);
     $rotateVal: random(540);
-    transform: translateY(75vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(75vh) translateX(#{$xVal + 20}vw) rotate(#{$rotateVal}deg);
+    opacity: 0;
   }
   100%{
-    $xVal: random(8);
+    $xVal: random(80);
     $rotateVal: random(720);
-    transform: translateY(80vh) translateX(#{$xVal}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(100vh) translateX(#{$xVal + 30}vw) rotate(#{$rotateVal}deg);
     opacity: 0;
     border-radius: 50%;
   }
