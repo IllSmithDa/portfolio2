@@ -28,7 +28,6 @@
 
 @media (max-width: 800px) {
   #particle-container {
-    max-width: 75vw;
     img {
       width: 3rem;
       height: 2.5rem;
@@ -41,7 +40,7 @@
 @keyframes particle-animation {
   0%{
     transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: 0/9;
     border-radius: 0;
   }
   25% {
