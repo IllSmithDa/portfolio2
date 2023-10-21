@@ -72,6 +72,8 @@
       background-size: 220%;
       transition: all .5s;
       border-radius: 2px;
+      position: relative;
+      z-index: 3;
     }
     &:hover {
       background-position: 100%;

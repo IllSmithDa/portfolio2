@@ -25,6 +25,8 @@
   font-size: $large-font-size;
   font-weight: 700;
   text-transform: uppercase;
+  z-index: 3;
+  position: relative;
 }
 
 .paragraph {
