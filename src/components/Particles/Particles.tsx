@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react";
 import "./Particles.scss";
-import fallLeaf1 from "../../assets/images/fall_leaf_1.png";
-import fallLeaf2 from "../../assets/images/fall_leaf_2.png";
-import fallLeaf3 from "../../assets/images/fall_leaf_3.png";
-import fallLeaf4 from "../../assets/images/fall_leaf_4.png";
-import fallLeaf5 from "../../assets/images/fall_leaf_5.png";
+import fallLeaf1 from "../../assets/images/fall_leaf_1.webp";
+import fallLeaf2 from "../../assets/images/fall_leaf_2.webp";
+import fallLeaf3 from "../../assets/images/fall_leaf_3.webp";
+import fallLeaf4 from "../../assets/images/fall_leaf_4.webp";
+import fallLeaf5 from "../../assets/images/fall_leaf_5.webp";
 
 const leafMap = {
   [1 as number]: fallLeaf1,

@@ -51,18 +51,18 @@
   50% {
     $xVal: random(40);
     $rotateVal: random(360);
-    transform: translateY(50vh) translateX(#{$xVal + 10}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(50vh) translateX(#{$xVal + 20}vw) rotate(#{$rotateVal}deg);
   }
   75% {
     $xVal: random(60);
     $rotateVal: random(540);
-    transform: translateY(75vh) translateX(#{$xVal + 20}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(75vh) translateX(#{$xVal + 30}vw) rotate(#{$rotateVal}deg);
     opacity: 0;
   }
   100%{
     $xVal: random(80);
     $rotateVal: random(720);
-    transform: translateY(100vh) translateX(#{$xVal + 30}vw) rotate(#{$rotateVal}deg);
+    transform: translateY(100vh) translateX(#{$xVal + 40}vw) rotate(#{$rotateVal}deg);
     opacity: 0;
     border-radius: 50%;
   }

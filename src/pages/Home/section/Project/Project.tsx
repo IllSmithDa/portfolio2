@@ -1,9 +1,9 @@
 import { useId } from "react";
-import theologianspenImg from '../../../../assets/images/theologianspen.png';
-import kloakImg from '../../../../assets/images/gokloak.png';
-import ironCodeImg from '../../../../assets/images/ironcodeman.png';
-import snowflakeImg from '../../../../assets/images/snowflake.png';
-import ghostedOnImg from '../../../../assets/images/ghostedon.png';
+import theologianspenImg from '../../../../assets/images/theologianspen.webp';
+import kloakImg from '../../../../assets/images/gokloak.webp';
+import ironCodeImg from '../../../../assets/images/ironcodeman.webp';
+import snowflakeImg from '../../../../assets/images/snowflake.webp';
+import ghostedOnImg from '../../../../assets/images/ghostedon.webp';
 import forestMain from '../../../../assets/images/forest_main_com.webp'
 import "./Project.scss";
 import Particles from "../../../../components/Particles/Particles";
