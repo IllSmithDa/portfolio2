@@ -26,7 +26,7 @@ export default function Particles () {
   }
   useMemo(() => {
     const dummyArr: ImageObj[] = [];
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 10; i++) {
       const newId = i;
       const imageNo:number = randomIntFromInterval(1, 5);
       const leafImage:string = leafMap[imageNo];

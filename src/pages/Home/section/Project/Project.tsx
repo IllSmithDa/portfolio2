@@ -13,6 +13,15 @@ export default function Project() {
 
   const projects = [
     {
+      projectName:'Ironcodeman',
+      projectDesc:`Ironcodeman is a reference for programmers for various programming languages using easy to use and user friendly interface. I built this application from the ground up using the PERN stack.`,
+      projectLink:'https://www.ironcodeman.com/',
+      shortLink: 'ironcodeman.com',
+      projectTech:'Javascript, Es6, React',
+      imageSrc:ironCodeImg,
+      id: useId(),
+    },
+    {
       projectName: 'Theologian\'s Pen',
       projectDesc:'Enjoy the richest theological writings of church history made easily accessible and readable.',
       projectLink:'https://www.theologianspen.com/test',
@@ -38,16 +47,6 @@ export default function Project() {
       shortLink: 'ghostedon.com',
       projectTech:'Javascript, Es6, React, Next.js, Postgresql, Node.js, Express.js',
       imageSrc:ghostedOnImg,
-      id: useId(),
-    },
-    {
-      projectName:'Ironcodeman',
-      projectDesc:`Ironcodeman is a simple to use application which lists commands from various different frameworks including
-      Git, Heroku and Django.`,
-      projectLink:'https://www.ironcodeman.com/',
-      shortLink: 'ironcodeman.com',
-      projectTech:'Javascript, Es6, React',
-      imageSrc:ironCodeImg,
       id: useId(),
     },
     {
