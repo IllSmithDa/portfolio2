@@ -17,7 +17,7 @@ export default function Contact() {
         <a href="https://github.com/IllSmithDa" target="_blank" rel="noopener noreferrer">
           <img alt="linkedin_link" src={githubImg} className="image-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/samuel-kim-1336ab112/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/samuel-kim-iron" target="_blank" rel="noopener noreferrer">
           <img alt="linkedin_link" src={linkedinImg} className="image-icon" />
         </a>
       </div>
