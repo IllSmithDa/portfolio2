@@ -24,29 +24,36 @@ function isElementInViewport(el: Element) {
 export default function Home() {
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    const handleScroll = () => {
       const elementsLeft = document.querySelectorAll('.left-on-scroll');
       elementsLeft.forEach(function (element) {
         if (isElementInViewport(element)) {
           element.classList.add('left-visible');
-          element.classList.remove("not-visible")
+          element.classList.remove('not-visible');
         } else {
           element.classList.remove('left-visible');
-          element.classList.add("not-visible")
+          element.classList.add('not-visible');
         }
       });
       const elementsRight = document.querySelectorAll('.right-on-scroll');
       elementsRight.forEach(function (element) {
         if (isElementInViewport(element)) {
           element.classList.add('right-visible');
-          element.classList.remove("not-visible")
+          element.classList.remove('not-visible');
         } else {
           element.classList.remove('right-visible');
-          element.classList.add("not-visible")
+          element.classList.add('not-visible');
         }
       });
-    })
-  });
+    };
+  
+    document.addEventListener('scroll', handleScroll);
+  
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Dependency array is empty to ensure the event listener is only added once.
 
   return (
     <div className="app-container">
