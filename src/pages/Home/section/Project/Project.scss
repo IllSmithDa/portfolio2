@@ -34,9 +34,9 @@
     */
   }
   &-display {
-    width: 90%;
+    width: 60%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
     &-card {
       background-color: rgba($color-white, 0.8);

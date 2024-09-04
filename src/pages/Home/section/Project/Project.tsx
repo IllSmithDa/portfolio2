@@ -2,9 +2,11 @@ import { useId } from "react";
 import theologianspenImg from '../../../../assets/images/theologianspen.webp';
 import kloakImg from '../../../../assets/images/gokloak.webp';
 import ironCodeImg from '../../../../assets/images/ironcodeman.webp';
-import snowflakeImg from '../../../../assets/images/snowflake.webp';
-import ghostedOnImg from '../../../../assets/images/ghostedon.webp';
-import forestMain from '../../../../assets/images/forest_main_com.webp'
+// Simport snowflakeImg from '../../../../assets/images/snowflake.webp';
+// Simport ghostedOnImg from '../../../../assets/images/ghostedon.webp';
+import forestMain from '../../../../assets/images/forest_main_com.webp';
+import forestMedium from '../../../../assets/images/forest_main_com_2000.webp';
+import forestSmall from '../../../../assets/images/forest_main_com_1000.webp';
 import "./Project.scss";
 import Particles from "../../../../components/Particles/Particles";
 
@@ -40,6 +42,7 @@ export default function Project() {
       imageSrc: kloakImg,
       id: useId(),
     },
+    /*
     { 
       projectName: 'GhostedOn',
       projectDesc:`GhostedOn is a social media application for anyone who wishes to share their work related stories. This web application is built solely by me from the ground up using the PERN stack. `,
@@ -58,6 +61,7 @@ export default function Project() {
       imageSrc: snowflakeImg,
       id: useId(),
     },
+    */
   ];
 
   const listProjects = projects.map((project) => {
@@ -88,6 +92,13 @@ export default function Project() {
       <img
         className='bg-img'
         src={forestMain}
+        srcSet={`
+          ${forestSmall} 600w,
+          ${forestMedium} 1200w,
+          ${forestMedium} 2000w`}
+        sizes="(max-width: 600px) 100vw,
+         (max-width: 1200px) 50vw,
+         33vw"
         loading='lazy'
       />
 

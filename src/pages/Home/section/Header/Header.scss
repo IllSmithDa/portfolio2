@@ -26,10 +26,11 @@
 
   h1 {
     text-transform: uppercase;
-    font-size: $x-large-font;
+    font-size: $header-font;
     animation: moveInRight 1s ease-out .75s;
     animation-fill-mode: backwards;
     z-index: 3;
+    line-height: normal;
     /*
     animation-iteration-count: 3;
     animation-delay: 3s;
@@ -43,6 +44,8 @@
     font-size: 2.5rem;
     animation: moveInLeft 1s ease-out .75s;
     animation-fill-mode: backwards;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     z-index: 3;
     &:hover {
       transform: skewY(-2deg) skewX(-2deg);
@@ -60,6 +63,9 @@
 @media (max-width: 1023px) {
   .header {
     background-attachment: local;
+    h1 {
+      font-size: 4rem;
+    }
     h3 {
       font-size: 2.2rem;
       max-width: 90%;
