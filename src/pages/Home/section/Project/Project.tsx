@@ -17,7 +17,7 @@ export default function Project() {
   const projects = [
     {
       projectName: 'Solar System',
-      projectDesc: `Rendered a beutiful model of the solar system using React.js and Three.js`,
+      projectDesc: `This web application renders a beautiful model of our solar system using React.js and Three.js`,
       projectLink: 'http://solar-system-sam.surge.sh',
       shortLink: 'solar-system-sam.surge.sh',
       projectTech:'React.js, Three.js',
