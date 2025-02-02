@@ -18,7 +18,7 @@ export default function Project() {
     {
       projectName: 'Solar System',
       projectDesc: `Rendered a beutiful model of the solar system using React.js and Three.js`,
-      projectLink: 'https://solar-system-sam.surge.sh/',
+      projectLink: 'http://solar-system-sam.surge.sh',
       shortLink: 'solar-system-sam.surge.sh',
       projectTech:'React.js, Three.js',
       imageSrc: solarSystem,
