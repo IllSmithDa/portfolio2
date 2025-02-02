@@ -7,6 +7,7 @@ import ironCodeImg from '../../../../assets/images/ironcodeman.webp';
 import forestMain from '../../../../assets/images/forest_main_com.webp';
 import forestMedium from '../../../../assets/images/forest_main_com_2000.webp';
 import forestSmall from '../../../../assets/images/forest_main_com_1000.webp';
+import solarSystem from '../../../../assets/images/solarSystem.webp';
 import "./Project.scss";
 import Particles from "../../../../components/Particles/Particles";
 
@@ -14,6 +15,15 @@ import Particles from "../../../../components/Particles/Particles";
 export default function Project() {
 
   const projects = [
+    {
+      projectName: 'Solar System',
+      projectDesc: `Rendered a beutiful model of the solar system using React.js and Three.js`,
+      projectLink: 'https://solar-system-sam.surge.sh/',
+      shortLink: 'solar-system-sam.surge.sh',
+      projectTech:'React.js, Three.js',
+      imageSrc: solarSystem,
+      id: useId(),
+    },
     {
       projectName:'Ironcodeman',
       projectDesc:`Ironcodeman is a reference for programmers for various programming languages using easy to use and user friendly interface. I built this application from the ground up using the PERN stack.`,
@@ -41,7 +51,7 @@ export default function Project() {
       projectTech:'React.js Node.js MongoDB, Express.js',
       imageSrc: kloakImg,
       id: useId(),
-    },
+    }
     /*
     { 
       projectName: 'GhostedOn',
@@ -71,7 +81,7 @@ export default function Project() {
         <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
          <img src={project.imageSrc} alt={`project link ${project.projectName}`} className="image-item"/>
         </a>
-        <p className="u-margin-bottom-large">{project.projectDesc}</p>
+        <p className="u-margin-bottom-medium">{project.projectDesc}</p>
         <a className="btn-black" href={project.projectLink} target="_blank" rel="noopener noreferrer">
           Link &rarr;
         </a>

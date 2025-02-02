@@ -36,7 +36,7 @@
   &-display {
     width: 60%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4rem;
     &-card {
       background-color: rgba($color-white, 0.8);
@@ -72,7 +72,7 @@
   .image-item {
     max-width:  100%;
     margin: 0;
-    max-height: 250px;
+    height: 170px;
     box-shadow: $light-shadow;
     &:hover {
       box-shadow: $default-shadow;
